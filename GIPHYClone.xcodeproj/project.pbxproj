@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08F92F4A315D6300D6620024 /* Pods_GIPHYCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D47B0630499B0ABDC69C92C /* Pods_GIPHYCloneTests.framework */; };
+		30B34B91400F1031691C8BA7 /* Pods_GIPHYClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7974DB2C3E012204F1358376 /* Pods_GIPHYClone.framework */; };
+		4332DD322692AC21006B998F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD312692AC21006B998F /* Data.swift */; };
+		4332DD342692AC80006B998F /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD332692AC80006B998F /* Pagination.swift */; };
+		4332DD362692ACBB006B998F /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD352692ACBB006B998F /* Meta.swift */; };
+		4332DD382692ACD3006B998F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD372692ACD3006B998F /* User.swift */; };
+		4332DD3E2692AD1D006B998F /* Mp4Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD3D2692AD1D006B998F /* Mp4Images.swift */; };
+		4332DD422692AD6D006B998F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD412692AD6D006B998F /* Images.swift */; };
+		4332DD442692ADA2006B998F /* Datum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD432692ADA2006B998F /* Datum.swift */; };
+		4332DD462692B239006B998F /* imgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD452692B239006B998F /* imgCell.swift */; };
+		4332DD4D2692CF91006B998F /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD4C2692CF91006B998F /* BaseAPI.swift */; };
+		4332DD4F2692D00F006B998F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD4E2692D00F006B998F /* APIManager.swift */; };
+		4332DD532693207A006B998F /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD522693207A006B998F /* PinterestLayout.swift */; };
+		4332DD5C2693294A006B998F /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD5B2693294A006B998F /* DetailCoordinator.swift */; };
+		4332DD5F26932995006B998F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD5E26932994006B998F /* DetailViewController.swift */; };
+		4332DD612693C65E006B998F /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4332DD602693C65E006B998F /* Detail.storyboard */; };
+		4332DD632693CCC7006B998F /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD622693CCC7006B998F /* DetailViewModel.swift */; };
+		435C4731269294CC00279324 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C4730269294CC00279324 /* AppDelegate.swift */; };
+		435C4733269294CC00279324 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C4732269294CC00279324 /* SceneDelegate.swift */; };
+		435C4738269294CC00279324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435C4736269294CC00279324 /* Main.storyboard */; };
+		435C473A269294CD00279324 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435C4739269294CD00279324 /* Assets.xcassets */; };
+		435C473D269294CD00279324 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435C473B269294CD00279324 /* LaunchScreen.storyboard */; };
+		435C4748269294CD00279324 /* GIPHYCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C4747269294CD00279324 /* GIPHYCloneTests.swift */; };
+		435C4753269294CD00279324 /* GIPHYCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C4752269294CD00279324 /* GIPHYCloneUITests.swift */; };
+		439D44362693D70C00C8A140 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D44352693D70C00C8A140 /* GifCell.swift */; };
+		439D44382693D81500C8A140 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D44372693D81500C8A140 /* UserCell.swift */; };
+		439D443A2693E85700C8A140 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D44392693E85700C8A140 /* MainViewController.swift */; };
+		439D443C2693E8CC00C8A140 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D443B2693E8CC00C8A140 /* MainViewModel.swift */; };
+		439D444026944F6300C8A140 /* GifData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D443F26944F6300C8A140 /* GifData.swift */; };
+		4AECC0E294DAA6FF41551AD1 /* Pods_GIPHYClone_GIPHYCloneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB01C79C44A825696EC90F6 /* Pods_GIPHYClone_GIPHYCloneUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		435C4744269294CD00279324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 435C4725269294CC00279324 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 435C472C269294CC00279324;
+			remoteInfo = GIPHYClone;
+		};
+		435C474F269294CD00279324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 435C4725269294CC00279324 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 435C472C269294CC00279324;
+			remoteInfo = GIPHYClone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C9D306060A569F1573D5948 /* Pods-GIPHYClone-GIPHYCloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIPHYClone-GIPHYCloneUITests.debug.xcconfig"; path = "Target Support Files/Pods-GIPHYClone-GIPHYCloneUITests/Pods-GIPHYClone-GIPHYCloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D47B0630499B0ABDC69C92C /* Pods_GIPHYCloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIPHYCloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E53EC62EB536BE23A1EF71 /* Pods-GIPHYClone-GIPHYCloneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIPHYClone-GIPHYCloneUITests.release.xcconfig"; path = "Target Support Files/Pods-GIPHYClone-GIPHYCloneUITests/Pods-GIPHYClone-GIPHYCloneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		40D2AC5AE0BF9451805083B5 /* Pods-GIPHYCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIPHYCloneTests.debug.xcconfig"; path = "Target Support Files/Pods-GIPHYCloneTests/Pods-GIPHYCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		41C966AF808F2FFFCD694508 /* Pods-GIPHYCloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIPHYCloneTests.release.xcconfig"; path = "Target Support Files/Pods-GIPHYCloneTests/Pods-GIPHYCloneTests.release.xcconfig"; sourceTree = "<group>"; };
+		4332DD312692AC21006B998F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		4332DD332692AC80006B998F /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		4332DD352692ACBB006B998F /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		4332DD372692ACD3006B998F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4332DD3D2692AD1D006B998F /* Mp4Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mp4Images.swift; sourceTree = "<group>"; };
+		4332DD412692AD6D006B998F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		4332DD432692ADA2006B998F /* Datum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datum.swift; sourceTree = "<group>"; };
+		4332DD452692B239006B998F /* imgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imgCell.swift; sourceTree = "<group>"; };
+		4332DD4C2692CF91006B998F /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		4332DD4E2692D00F006B998F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		4332DD522693207A006B998F /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		4332DD5B2693294A006B998F /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		4332DD5E26932994006B998F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4332DD602693C65E006B998F /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		4332DD622693CCC7006B998F /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		435C472D269294CC00279324 /* GIPHYClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIPHYClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		435C4730269294CC00279324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		435C4732269294CC00279324 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		435C4737269294CC00279324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		435C4739269294CD00279324 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		435C473C269294CD00279324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		435C473E269294CD00279324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		435C4743269294CD00279324 /* GIPHYCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GIPHYCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		435C4747269294CD00279324 /* GIPHYCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIPHYCloneTests.swift; sourceTree = "<group>"; };
+		435C4749269294CD00279324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		435C474E269294CD00279324 /* GIPHYCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GIPHYCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		435C4752269294CD00279324 /* GIPHYCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIPHYCloneUITests.swift; sourceTree = "<group>"; };
+		435C4754269294CD00279324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		439D44352693D70C00C8A140 /* GifCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCell.swift; sourceTree = "<group>"; };
+		439D44372693D81500C8A140 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		439D44392693E85700C8A140 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		439D443B2693E8CC00C8A140 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		439D443F26944F6300C8A140 /* GifData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifData.swift; sourceTree = "<group>"; };
+		7974DB2C3E012204F1358376 /* Pods_GIPHYClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIPHYClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB01C79C44A825696EC90F6 /* Pods_GIPHYClone_GIPHYCloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIPHYClone_GIPHYCloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBD50FF559EB4B5E1EEDB4E /* Pods-GIPHYClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIPHYClone.debug.xcconfig"; path = "Target Support Files/Pods-GIPHYClone/Pods-GIPHYClone.debug.xcconfig"; sourceTree = "<group>"; };
+		E6223EDDEE80C010FB3B5898 /* Pods-GIPHYClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIPHYClone.release.xcconfig"; path = "Target Support Files/Pods-GIPHYClone/Pods-GIPHYClone.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		435C472A269294CC00279324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B34B91400F1031691C8BA7 /* Pods_GIPHYClone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435C4740269294CD00279324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F92F4A315D6300D6620024 /* Pods_GIPHYCloneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435C474B269294CD00279324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AECC0E294DAA6FF41551AD1 /* Pods_GIPHYClone_GIPHYCloneUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BBFC1C0EBA8F0D832C75A99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7974DB2C3E012204F1358376 /* Pods_GIPHYClone.framework */,
+				BDB01C79C44A825696EC90F6 /* Pods_GIPHYClone_GIPHYCloneUITests.framework */,
+				0D47B0630499B0ABDC69C92C /* Pods_GIPHYCloneTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4332DD302692AC0D006B998F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4332DD312692AC21006B998F /* Data.swift */,
+				4332DD432692ADA2006B998F /* Datum.swift */,
+				4332DD412692AD6D006B998F /* Images.swift */,
+				4332DD352692ACBB006B998F /* Meta.swift */,
+				4332DD3D2692AD1D006B998F /* Mp4Images.swift */,
+				4332DD332692AC80006B998F /* Pagination.swift */,
+				4332DD372692ACD3006B998F /* User.swift */,
+				439D443F26944F6300C8A140 /* GifData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4332DD4B2692CF7F006B998F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4332DD4C2692CF91006B998F /* BaseAPI.swift */,
+				4332DD4E2692D00F006B998F /* APIManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4332DD542693275E006B998F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4332DD56269327C6006B998F /* Delegate */,
+				4332DD302692AC0D006B998F /* Model */,
+				4332DD57269327CE006B998F /* Modules */,
+				4332DD4B2692CF7F006B998F /* Service */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4332DD55269327A8006B998F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				435C4739269294CD00279324 /* Assets.xcassets */,
+				435C473B269294CD00279324 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4332DD56269327C6006B998F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				435C4730269294CC00279324 /* AppDelegate.swift */,
+				435C4732269294CC00279324 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		4332DD57269327CE006B998F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4332DD5826932891006B998F /* Main */,
+				4332DD5D26932983006B998F /* Detail */,
+				4332DD5A2693292B006B998F /* Coordinator */,
+				4332DD522693207A006B998F /* PinterestLayout.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4332DD5826932891006B998F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				435C4736269294CC00279324 /* Main.storyboard */,
+				439D44392693E85700C8A140 /* MainViewController.swift */,
+				439D443B2693E8CC00C8A140 /* MainViewModel.swift */,
+				4332DD59269328BB006B998F /* Cell */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4332DD59269328BB006B998F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4332DD452692B239006B998F /* imgCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4332DD5A2693292B006B998F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4332DD5B2693294A006B998F /* DetailCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4332DD5D26932983006B998F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4332DD602693C65E006B998F /* Detail.storyboard */,
+				4332DD5E26932994006B998F /* DetailViewController.swift */,
+				4332DD622693CCC7006B998F /* DetailViewModel.swift */,
+				439D44342693D6F300C8A140 /* Cell */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		435C4724269294CC00279324 = {
+			isa = PBXGroup;
+			children = (
+				435C472F269294CC00279324 /* GIPHYClone */,
+				435C4746269294CD00279324 /* GIPHYCloneTests */,
+				435C4751269294CD00279324 /* GIPHYCloneUITests */,
+				435C472E269294CC00279324 /* Products */,
+				48A1CC9AEC77626C7B884DAE /* Pods */,
+				2BBFC1C0EBA8F0D832C75A99 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		435C472E269294CC00279324 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				435C472D269294CC00279324 /* GIPHYClone.app */,
+				435C4743269294CD00279324 /* GIPHYCloneTests.xctest */,
+				435C474E269294CD00279324 /* GIPHYCloneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		435C472F269294CC00279324 /* GIPHYClone */ = {
+			isa = PBXGroup;
+			children = (
+				4332DD55269327A8006B998F /* Resource */,
+				4332DD542693275E006B998F /* Source */,
+				435C473E269294CD00279324 /* Info.plist */,
+			);
+			path = GIPHYClone;
+			sourceTree = "<group>";
+		};
+		435C4746269294CD00279324 /* GIPHYCloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				435C4747269294CD00279324 /* GIPHYCloneTests.swift */,
+				435C4749269294CD00279324 /* Info.plist */,
+			);
+			path = GIPHYCloneTests;
+			sourceTree = "<group>";
+		};
+		435C4751269294CD00279324 /* GIPHYCloneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				435C4752269294CD00279324 /* GIPHYCloneUITests.swift */,
+				435C4754269294CD00279324 /* Info.plist */,
+			);
+			path = GIPHYCloneUITests;
+			sourceTree = "<group>";
+		};
+		439D44342693D6F300C8A140 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				439D44352693D70C00C8A140 /* GifCell.swift */,
+				439D44372693D81500C8A140 /* UserCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		48A1CC9AEC77626C7B884DAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFBD50FF559EB4B5E1EEDB4E /* Pods-GIPHYClone.debug.xcconfig */,
+				E6223EDDEE80C010FB3B5898 /* Pods-GIPHYClone.release.xcconfig */,
+				0C9D306060A569F1573D5948 /* Pods-GIPHYClone-GIPHYCloneUITests.debug.xcconfig */,
+				12E53EC62EB536BE23A1EF71 /* Pods-GIPHYClone-GIPHYCloneUITests.release.xcconfig */,
+				40D2AC5AE0BF9451805083B5 /* Pods-GIPHYCloneTests.debug.xcconfig */,
+				41C966AF808F2FFFCD694508 /* Pods-GIPHYCloneTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		435C472C269294CC00279324 /* GIPHYClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 435C4757269294CD00279324 /* Build configuration list for PBXNativeTarget "GIPHYClone" */;
+			buildPhases = (
+				B593A41B0B4CCFE808371074 /* [CP] Check Pods Manifest.lock */,
+				435C4729269294CC00279324 /* Sources */,
+				435C472A269294CC00279324 /* Frameworks */,
+				435C472B269294CC00279324 /* Resources */,
+				5BB6BF43E7D5A812AD395A62 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GIPHYClone;
+			productName = GIPHYClone;
+			productReference = 435C472D269294CC00279324 /* GIPHYClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		435C4742269294CD00279324 /* GIPHYCloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 435C475A269294CD00279324 /* Build configuration list for PBXNativeTarget "GIPHYCloneTests" */;
+			buildPhases = (
+				F05A3C79204F0DD30F2D4A9C /* [CP] Check Pods Manifest.lock */,
+				435C473F269294CD00279324 /* Sources */,
+				435C4740269294CD00279324 /* Frameworks */,
+				435C4741269294CD00279324 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				435C4745269294CD00279324 /* PBXTargetDependency */,
+			);
+			name = GIPHYCloneTests;
+			productName = GIPHYCloneTests;
+			productReference = 435C4743269294CD00279324 /* GIPHYCloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		435C474D269294CD00279324 /* GIPHYCloneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 435C475D269294CD00279324 /* Build configuration list for PBXNativeTarget "GIPHYCloneUITests" */;
+			buildPhases = (
+				F6D6D92890848F6E15BF74B2 /* [CP] Check Pods Manifest.lock */,
+				435C474A269294CD00279324 /* Sources */,
+				435C474B269294CD00279324 /* Frameworks */,
+				435C474C269294CD00279324 /* Resources */,
+				9FC0CA0E9E46C25F641C1B25 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				435C4750269294CD00279324 /* PBXTargetDependency */,
+			);
+			name = GIPHYCloneUITests;
+			productName = GIPHYCloneUITests;
+			productReference = 435C474E269294CD00279324 /* GIPHYCloneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		435C4725269294CC00279324 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					435C472C269294CC00279324 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					435C4742269294CD00279324 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 435C472C269294CC00279324;
+					};
+					435C474D269294CD00279324 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 435C472C269294CC00279324;
+					};
+				};
+			};
+			buildConfigurationList = 435C4728269294CC00279324 /* Build configuration list for PBXProject "GIPHYClone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 435C4724269294CC00279324;
+			productRefGroup = 435C472E269294CC00279324 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				435C472C269294CC00279324 /* GIPHYClone */,
+				435C4742269294CD00279324 /* GIPHYCloneTests */,
+				435C474D269294CD00279324 /* GIPHYCloneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		435C472B269294CC00279324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435C473D269294CD00279324 /* LaunchScreen.storyboard in Resources */,
+				435C473A269294CD00279324 /* Assets.xcassets in Resources */,
+				435C4738269294CC00279324 /* Main.storyboard in Resources */,
+				4332DD612693C65E006B998F /* Detail.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435C4741269294CD00279324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435C474C269294CD00279324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BB6BF43E7D5A812AD395A62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIPHYClone/Pods-GIPHYClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIPHYClone/Pods-GIPHYClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GIPHYClone/Pods-GIPHYClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FC0CA0E9E46C25F641C1B25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIPHYClone-GIPHYCloneUITests/Pods-GIPHYClone-GIPHYCloneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIPHYClone-GIPHYCloneUITests/Pods-GIPHYClone-GIPHYCloneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GIPHYClone-GIPHYCloneUITests/Pods-GIPHYClone-GIPHYCloneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B593A41B0B4CCFE808371074 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GIPHYClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F05A3C79204F0DD30F2D4A9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GIPHYCloneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6D6D92890848F6E15BF74B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GIPHYClone-GIPHYCloneUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		435C4729269294CC00279324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				439D443A2693E85700C8A140 /* MainViewController.swift in Sources */,
+				4332DD532693207A006B998F /* PinterestLayout.swift in Sources */,
+				4332DD5F26932995006B998F /* DetailViewController.swift in Sources */,
+				439D44362693D70C00C8A140 /* GifCell.swift in Sources */,
+				4332DD422692AD6D006B998F /* Images.swift in Sources */,
+				435C4731269294CC00279324 /* AppDelegate.swift in Sources */,
+				4332DD3E2692AD1D006B998F /* Mp4Images.swift in Sources */,
+				4332DD362692ACBB006B998F /* Meta.swift in Sources */,
+				4332DD4F2692D00F006B998F /* APIManager.swift in Sources */,
+				4332DD342692AC80006B998F /* Pagination.swift in Sources */,
+				4332DD5C2693294A006B998F /* DetailCoordinator.swift in Sources */,
+				435C4733269294CC00279324 /* SceneDelegate.swift in Sources */,
+				4332DD322692AC21006B998F /* Data.swift in Sources */,
+				4332DD632693CCC7006B998F /* DetailViewModel.swift in Sources */,
+				4332DD442692ADA2006B998F /* Datum.swift in Sources */,
+				4332DD462692B239006B998F /* imgCell.swift in Sources */,
+				4332DD382692ACD3006B998F /* User.swift in Sources */,
+				439D44382693D81500C8A140 /* UserCell.swift in Sources */,
+				4332DD4D2692CF91006B998F /* BaseAPI.swift in Sources */,
+				439D443C2693E8CC00C8A140 /* MainViewModel.swift in Sources */,
+				439D444026944F6300C8A140 /* GifData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435C473F269294CD00279324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435C4748269294CD00279324 /* GIPHYCloneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435C474A269294CD00279324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435C4753269294CD00279324 /* GIPHYCloneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		435C4745269294CD00279324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 435C472C269294CC00279324 /* GIPHYClone */;
+			targetProxy = 435C4744269294CD00279324 /* PBXContainerItemProxy */;
+		};
+		435C4750269294CD00279324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 435C472C269294CC00279324 /* GIPHYClone */;
+			targetProxy = 435C474F269294CD00279324 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		435C4736269294CC00279324 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				435C4737269294CC00279324 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		435C473B269294CD00279324 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				435C473C269294CD00279324 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		435C4755269294CD00279324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		435C4756269294CD00279324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		435C4758269294CD00279324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBD50FF559EB4B5E1EEDB4E /* Pods-GIPHYClone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58343K98Z;
+				INFOPLIST_FILE = GIPHYClone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.GIPHYClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		435C4759269294CD00279324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6223EDDEE80C010FB3B5898 /* Pods-GIPHYClone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58343K98Z;
+				INFOPLIST_FILE = GIPHYClone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.GIPHYClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		435C475B269294CD00279324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D2AC5AE0BF9451805083B5 /* Pods-GIPHYCloneTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58343K98Z;
+				INFOPLIST_FILE = GIPHYCloneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.GIPHYCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GIPHYClone.app/GIPHYClone";
+			};
+			name = Debug;
+		};
+		435C475C269294CD00279324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41C966AF808F2FFFCD694508 /* Pods-GIPHYCloneTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58343K98Z;
+				INFOPLIST_FILE = GIPHYCloneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.GIPHYCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GIPHYClone.app/GIPHYClone";
+			};
+			name = Release;
+		};
+		435C475E269294CD00279324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C9D306060A569F1573D5948 /* Pods-GIPHYClone-GIPHYCloneUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58343K98Z;
+				INFOPLIST_FILE = GIPHYCloneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.GIPHYCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GIPHYClone;
+			};
+			name = Debug;
+		};
+		435C475F269294CD00279324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12E53EC62EB536BE23A1EF71 /* Pods-GIPHYClone-GIPHYCloneUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A58343K98Z;
+				INFOPLIST_FILE = GIPHYCloneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jihyun.GIPHYCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GIPHYClone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		435C4728269294CC00279324 /* Build configuration list for PBXProject "GIPHYClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435C4755269294CD00279324 /* Debug */,
+				435C4756269294CD00279324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		435C4757269294CD00279324 /* Build configuration list for PBXNativeTarget "GIPHYClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435C4758269294CD00279324 /* Debug */,
+				435C4759269294CD00279324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		435C475A269294CD00279324 /* Build configuration list for PBXNativeTarget "GIPHYCloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435C475B269294CD00279324 /* Debug */,
+				435C475C269294CD00279324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		435C475D269294CD00279324 /* Build configuration list for PBXNativeTarget "GIPHYCloneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435C475E269294CD00279324 /* Debug */,
+				435C475F269294CD00279324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 435C4725269294CC00279324 /* Project object */;
+}

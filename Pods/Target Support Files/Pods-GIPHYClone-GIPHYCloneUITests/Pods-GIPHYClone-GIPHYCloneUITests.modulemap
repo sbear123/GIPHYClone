@@ -1,0 +1,6 @@
+framework module Pods_GIPHYClone_GIPHYCloneUITests {
+  umbrella header "Pods-GIPHYClone-GIPHYCloneUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
