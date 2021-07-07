@@ -8,7 +8,7 @@
 import UIKit
 import AVKit
 
-class imgCell: UICollectionViewCell {
+class ImgCell: UICollectionViewCell {
     @IBOutlet weak var imgView: UIImageView!
     
     var player = AVPlayer()

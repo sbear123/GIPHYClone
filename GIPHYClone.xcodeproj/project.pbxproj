@@ -16,7 +16,7 @@
 		4332DD3E2692AD1D006B998F /* Mp4Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD3D2692AD1D006B998F /* Mp4Images.swift */; };
 		4332DD422692AD6D006B998F /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD412692AD6D006B998F /* Images.swift */; };
 		4332DD442692ADA2006B998F /* Datum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD432692ADA2006B998F /* Datum.swift */; };
-		4332DD462692B239006B998F /* imgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD452692B239006B998F /* imgCell.swift */; };
+		4332DD462692B239006B998F /* ImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD452692B239006B998F /* ImgCell.swift */; };
 		4332DD4D2692CF91006B998F /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD4C2692CF91006B998F /* BaseAPI.swift */; };
 		4332DD4F2692D00F006B998F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD4E2692D00F006B998F /* APIManager.swift */; };
 		4332DD532693207A006B998F /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4332DD522693207A006B998F /* PinterestLayout.swift */; };
@@ -69,7 +69,7 @@
 		4332DD3D2692AD1D006B998F /* Mp4Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mp4Images.swift; sourceTree = "<group>"; };
 		4332DD412692AD6D006B998F /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		4332DD432692ADA2006B998F /* Datum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datum.swift; sourceTree = "<group>"; };
-		4332DD452692B239006B998F /* imgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imgCell.swift; sourceTree = "<group>"; };
+		4332DD452692B239006B998F /* ImgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgCell.swift; sourceTree = "<group>"; };
 		4332DD4C2692CF91006B998F /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		4332DD4E2692D00F006B998F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		4332DD522693207A006B998F /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 		4332DD59269328BB006B998F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				4332DD452692B239006B998F /* imgCell.swift */,
+				4332DD452692B239006B998F /* ImgCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -567,7 +567,7 @@
 				4332DD322692AC21006B998F /* Data.swift in Sources */,
 				4332DD632693CCC7006B998F /* DetailViewModel.swift in Sources */,
 				4332DD442692ADA2006B998F /* Datum.swift in Sources */,
-				4332DD462692B239006B998F /* imgCell.swift in Sources */,
+				4332DD462692B239006B998F /* ImgCell.swift in Sources */,
 				4332DD382692ACD3006B998F /* User.swift in Sources */,
 				439D44382693D81500C8A140 /* UserCell.swift in Sources */,
 				4332DD4D2692CF91006B998F /* BaseAPI.swift in Sources */,
